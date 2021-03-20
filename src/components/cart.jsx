@@ -7,8 +7,8 @@ let total = 0;
 class CheckoutCart extends Component {
   state = {
     orders: [
-      { command: "addToCart", item: "brg", quantity: 10 },
-      { command: "addToCart", item: "brg", quantity: 10 },
+      // { command: "addToCart", item: "brg", quantity: 10 },
+      // { command: "addToCart", item: "brg", quantity: 10 },
     ],
   };
   handleOrder = () => {
@@ -17,14 +17,8 @@ class CheckoutCart extends Component {
   };
   componentDidMount() {
     alanBtn({
-      //earnmoney
       key:
-        "75298c543e111fe86fe2707bb2f8a31b2e956eca572e1d8b807a3e2338fdd0dc/stage",
-      //article
-      // key: '64370f4c903e66c5b517887fefa45c1b2e956eca572e1d8b807a3e2338fdd0dc/stage',
-      // key:
-      //   "adf7cdca113b7ee6918bb3c560cd74032e956eca572e1d8b807a3e2338fdd0dc/stage",
-      // key: "75298c543e111fe86fe2707bb2f8a31b2e956eca572e1d8b807a3e2338fdd0dc/stage",
+        "1ec933b6e72d191aae0c2f2d218b962d2e956eca572e1d8b807a3e2338fdd0dc/stage",
       onCommand: (commandData) => {
         if (commandData.command === "addToCart") {
           let orders = [...this.state.orders, commandData];
